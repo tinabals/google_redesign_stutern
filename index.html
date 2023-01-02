@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristiano_Ronaldo</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <script src="https://kit.fontawesome.com/1e252d778c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- the header where the google logo search bar and google account displays -->
+    <header>
+        <div class="google-logos-wrapper">
+            <img src="./Images/googlelogo_color_92x30dp.png" alt="google-logo" id="logo" />
+            <div class="search-input">
+                <input type="search" name="search" id="search" />
+                <div class="group-icons">
+                    <div class="icons voice">
+                        <a href="#" alt="voice">
+                            <svg class="goxjub" focusable="false" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#4285f4"
+                                    d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+                                </path>
+                                <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+                                <path fill="#fbbc05"
+                                    d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z">
+                                </path>
+                                <path fill="#ea4335"
+                                    d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icons images">
+                        <a href="#" alt="image">
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlN0YW5kYXJkX3Byb2R1Y3RfaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE5MnB4IiBoZWlnaHQ9IjE5MnB4IiB2aWV3Qm94PSIwIDAgMTkyIDE5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTkyIDE5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxyZWN0IGlkPSJib3VuZGluZ19ib3hfMV8iIGZpbGw9Im5vbmUiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIi8+CjxnIGlkPSJhcnRfbGF5ZXIiPgoJPGNpcmNsZSBpZD0iRG90IiBmaWxsPSIjNDI4NUY0IiBjeD0iOTYiIGN5PSIxMDQuMTUiIHI9IjI4Ii8+Cgk8cGF0aCBpZD0iUmVkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTYwLDcydjQwLjE1VjEzNmMwLDEuNjktMC4zNCwzLjI5LTAuODIsNC44MnYwdjBjLTEuNTcsNC45Mi01LjQzLDguNzgtMTAuMzUsMTAuMzVoMHYwCgkJYy0xLjUzLDAuNDktMy4xMywwLjgyLTQuODIsMC44Mkg2NmwxNiwxNmg1MGgxMmM0LjQyLDAsOC42My0wLjksMTIuNDYtMi41MWMzLjgzLTEuNjIsNy4yOC0zLjk2LDEwLjE3LTYuODYKCQljMS40NS0xLjQ1LDIuNzYtMy4wMywzLjkxLTQuNzRjMi4zLTMuNCwzLjk2LTcuMjgsNC44MS0xMS40NGMwLjQzLTIuMDgsMC42NS00LjI0LDAuNjUtNi40NXYtMTJWOTYuMTVWODRsLTYtMTlsLTEwLjgyLDIuMTgKCQlDMTU5LjY2LDY4LjcxLDE2MCw3MC4zMSwxNjAsNzJ6Ii8+Cgk8cGF0aCBpZD0iQmx1ZSIgZmlsbD0iIzQyODVGNCIgZD0iTTMyLDcyYzAtMS42OSwwLjM0LTMuMjksMC44Mi00LjgyYzEuNTctNC45Miw1LjQzLTguNzgsMTAuMzUtMTAuMzVDNDQuNzEsNTYuMzQsNDYuMzEsNTYsNDgsNTYKCQloOTZjMS42OSwwLDMuMjksMC4zNCw0LjgyLDAuODJjMCwwLDAsMCwwLDBMMTQ5LDQ1bC0xNy01bC0xNi0xNmgtMTMuNDRIOTZoLTYuNTZINzZMNjAsNDBINDhjLTE3LjY3LDAtMzIsMTQuMzMtMzIsMzJ2MTJ2MjBsMTYsMTYKCQlWNzJ6Ii8+Cgk8cGF0aCBpZD0iR3JlZW4iIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xNDQsNDBoLTEybDE2LjgzLDE2LjgzYzEuMjMsMC4zOSwyLjM5LDAuOTMsMy40NywxLjU5YzIuMTYsMS4zMiwzLjk3LDMuMTMsNS4yOSw1LjI5CgkJYzAuNjYsMS4wOCwxLjIsMi4yNCwxLjU5LDMuNDd2MEwxNzYsODRWNzJDMTc2LDU0LjMzLDE2MS42Nyw0MCwxNDQsNDB6Ii8+Cgk8cGF0aCBpZD0iWWVsbG93IiBmaWxsPSIjRkJCQzA0IiBkPSJNNDgsMTY4aDM5Ljg5bC0xNi0xNkg0OGMtOC44MiwwLTE2LTcuMTgtMTYtMTZ2LTIzLjg5bC0xNi0xNlYxMzZDMTYsMTUzLjY3LDMwLjMzLDE2OCw0OCwxNjh6CgkJIi8+CjwvZz4KPC9zdmc+Cg=="
+                                alt="search_by_images" />
+                        </a>
+                    </div>
+                    <div class="icons search">
+                        <a href="#" alt="search">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="google-account-wrapper">
+            <div class="google-account settings">
+                <a href="#" alt="settings">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+                        </path>
+                        <circle cx="12" cy="12" r="3.5"></circle>
+                    </svg>
+                </a>
+            </div>
+            <div class="google-account apps">
+                <a href="#" alt="google-apps">
+                    <svg class="gb_0e" focusable="false" viewBox="0 0 24 24">
+                        <path
+                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="google-account profile">
+                <a href="#" alt="account">
+                    <img src="./Images/profile-img.png" alt="Profile_image" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- the main section where everything displayed apart from header(google logo search bar and google account displays) -->
+    <main>
+        <!-- news , images videos and more categories  -->
+        <section class="categories-section">
+            <div class="anivm">
+                <div class="categories all">
+                    <a
+                        href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwqigxKzRg9BJMLsosLslMzMtXKMrPS8xJyQcAkaUKOw&q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&oq=cr&aqs=chrome.2.69i59l2j46i39j0i67i131i433j69i61j69i60j69i61j69i60.5107j0j7&sourceid=chrome&ie=UTF-8">
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path>
+                            <path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path>
+                            <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
+                            <path fill="#4285f4"
+                                d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59">
+                            </path>
+                        </svg>
+                        <span id="all">All</span>
+                    </a>
+                </div>
+                <div class="categories news">
+                    <a
+                        href="https://www.google.com/search?q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&sxsrf=ALiCzsZ06_cMeFAB5HzvtXud7WdbeWBOHQ:1671220056541&source=lnms&tbm=nws&sa=X&ved=2ahUKEwj8377u8_77AhUhTaQEHduECisQ_AUoAXoECAEQAw">
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2">
+                            </path>
+                        </svg>
+                        <span>News</span>
+                    </a>
+                </div>
+                <div class="categories images">
+                    <a
+                        href="https://www.google.com/search?q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&sxsrf=ALiCzsZ06_cMeFAB5HzvtXud7WdbeWBOHQ:1671220056541&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj8377u8_77AhUhTaQEHduECisQ_AUoAnoECAEQBA">
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5">
+                            </path>
+                        </svg>
+                        <span>Images</span>
+                    </a>
+                </div>
+                <div class="categories videos">
+                    <a
+                        href="https://www.google.com/search?q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&sxsrf=ALiCzsZ06_cMeFAB5HzvtXud7WdbeWBOHQ:1671220056541&source=lnms&tbm=vid&sa=X&ved=2ahUKEwj8377u8_77AhUhTaQEHduECisQ_AUoA3oECAEQBQ">
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5">
+                            </path>
+                        </svg>
+                        <span>Videos</span>
+                    </a>
+                </div>
+                <div class="categories more">
+                    <a href="#">
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                            </path>
+                        </svg>
+                        <span>More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tools"><a href="#"> Tools</a></div>
+        </section>
+        <hr class="categories-section-hr" />
+        <!-- About 168,000,000 results -->
+        <article class="about-result">
+            <div id="result-stats">
+                About 168,000,000 results (0.47 seconds)
+            </div>
+        </article>
+        <!-- C. Ronaldo Title section; contents his name and origin -->
+        <section class="Title-section">
+            <div class="name">
+                <h1>Cristiano Ronaldo</h1>
+                <div class="origin">
+                    <span>Portuguese footballer</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="about-btn">
+                <button class="overview">
+                    <a
+                        href="https://www.google.com/search?q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&oq=cristiano+ronaldo&aqs=chrome.0.69i59j0i271l2j69i61j69i60l2.51512j0j7&sourceid=chrome&ie=UTF-8">
+                        Overview
+                    </a>
+                </button>
+                <button class="News">
+                    <a href="#"> News </a>
+                </button>
+                <button class="Stats">
+                    <a href="#"> Stats </a>
+                </button>
+                <button class="Videos">
+                    <a href="#"> Video </a>
+                </button>
+            </div>
+        </section>
+        <!-- cristiano Ronaldo attributes section========= -->
+        <section class="attribute-section">
+
+            <div class="gallery">
+                <div class="fpic">
+                    <img src="./Images/licensed-image.jpg" alt="" style="width: 302px; height: 302px;" />
+                </div>
+                <div class="gtpic">
+                    <img src="./Images/crist_cup.jpg" alt="" style="width: 236px; height: 150px;" />
+                    <img src="./Images/with-emirates_shirt.jpg" alt="" style="width: 236px; height: 150px;" />
+                </div>
+            </div>
+
+            <div class="sky-sport">
+                <a
+                    href="https://www.skysports.com/watch/video/sports/football/12772641/cristiano-ronaldo-briefly-mentioned-in-matchday-programme">
+                    <div class="img-wrapper">
+                        <img src="./Images/sky_sport_img.jpg" style="width: 100%; height: 133.39px;" alt="">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="utubetext">
+                            <img src="./Images/sky-sport-logo.jpg" alt="" style="width: 12px; height: 12px;">
+                            <!-- <span>Sky Sport &nbsp; •Sky Sports</span> -->
+                            <span><span>Sky Sports</span>&nbsp;•</span>
+                            <span>Sky Sports</span>
+                        </div>
+                        <p>
+                            Cristiano Ronaldo: Erik ten Hag snubs former striker in ...
+                        </p>
+                        <p>
+                            Cristiano Ronaldo's departure from Manchester United is briefly mentioned in the matchday
+                            programme ahead of Carabao Cup match against&nbsp;...
+                        </p>
+                        <p>
+                            11 hours ago
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="attribute">
+                <div class="age-csport">
+                    <div class="age-team current_team">
+                        <h1>current team</h1>
+                        <p>Portugal national football team</p>
+                    </div>
+                    <div class="age-team age">
+                        <h1>Age</h1>
+                        <p>
+                            37&nbsp;years old <span>(5 February 1985)</span>
+                        </p>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/cristiano/?hl=en" alt="" class="crist-instahandle">
+                    <div class="headffp instaheadline">
+                        <div class="instahandle-img-wrapper">
+                            <img src="./Images/insta-logo.png" alt="insta logo" style="width: 14px; height: 14px;">
+                            <span> &nbsp; Instagram</span>
+                            <svg style="width: 14px; height: 14px;" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p>
+                            Cristiano Ronaldo (@cristiano) • Instagram photos and videos
+                            https://www.instagram.com › cristiano
+                        </p>
+                    </div>
+                    <div class="headffp fofopo">
+                        <p>516m Followers</p>
+                        <p>522 Following</p>
+                        <p>3414 Posts</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- top stories of cristiano Ronaldo----------....... -->
+        <section class="crist-top-stories-section">
+            <div class="crist-top-stories news-about-crist">
+                <h1>Top stories</h1>
+                <a href="https://www.google.com/search?q=cristiano+ronaldo&rlz=1C1RLNS_enNG1032NG1033&oq=&sourceid=chrome&ie=UTF-8&tbm=nws&story=Gk4IpQEaKAoTc3RvcnlfbGFiZWxfcGFydGlhbBIRQ3Jpc3RpYW5vIFJvbmFsZG8aHwoTc3RvcnlfbGFiZWxfcGFydGlhbBIIVHJhbnNmZXIyMQon2ZC-jtHvjuGvAfHoyee_ttaZugHe9L-pxNHyg3j4mISMvsW5w_QBEMqGg6oGGAVYAQ&fcs=AF650RK3lPNkWb8j8j0Jc-shCmLnREl9ng&sa=X&ved=2ahUKEwjo6IfiiI78AhX887sIHc_CBn8QjcEJegQIXBAD&sxsrf=ALiCzsYANJwOHH_xJwi0pc9cItW_kbut_Q:1671741063696"
+                    alt="" target="_blank" rel="noopener noreferrer">
+                    News about Cristiano Ronaldo
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="crist-top-stories current-info-about-crist">
+                <h1>About</h1>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

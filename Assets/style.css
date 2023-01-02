@@ -1,0 +1,451 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+    background-color: #fff;
+    color: #202124;
+}
+
+/* the CSS the header where the google logo search bar and google account displays */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 96%;
+    padding-top: 26px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #202124;
+}
+
+header .google-logos-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    border-radius: 50px;
+    padding-left: 12px;
+    width: 668px;
+    height: 42px;
+    font-size: 14px;
+    margin-left: 28px;
+}
+
+header .search-input:hover {
+    box-shadow: 2px 2px 5px 5px rgba(64, 60, 67, .16);
+}
+
+header .search-input #search {
+    width: 568px;
+    height: 32px;
+    border-left: none;
+    border-right: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    outline: none;
+}
+
+header .group-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+header .icons {
+    margin: 0 4px 0;
+    align-items: center;
+}
+
+header #logo {
+    max-width: 92px;
+    height: 30px;
+}
+
+header .group-icons svg,
+.group-icons img,
+.google-account-wrapper svg {
+    max-width: 24px;
+    height: 24px;
+}
+
+header .google-account-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .google-account-wrapper img {
+    max-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    opacity: 2;
+}
+
+header .google-account {
+    margin: 0 8px 0;
+    align-items: center;
+}
+
+/* the CSS main section where everything displayed apart from header(google logo search bar and google account displays) */
+
+main {
+    margin-top: 34px;
+}
+
+/* news , images videos and more categories */
+.categories-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 82%;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding-right: 438px;
+    padding-left: 32px;
+}
+
+.categories-section .anivm {
+    display: flex;
+    flex-direction: row;
+}
+
+.categories {
+    margin-right: 24px;
+}
+
+.categories-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #5F6368;
+}
+
+.categories-section .anivm svg {
+    max-width: 16px;
+    height: 16px;
+}
+
+.categories span {
+    margin-left: 2px;
+}
+
+.anivm .all {
+    border-bottom: 2px solid #1a73e8;
+}
+
+.anivm #all {
+    color: #1a73e8;
+}
+
+.categories-section-hr {
+    max-width: 100%;
+    height: 0.5px;
+    background-color: #ccc;
+}
+
+/* About 168,000,000 results */
+.about-result {
+    color: #5F6368;
+    font-size: 0.9rem;
+    font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+    max-width: 82%;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 12px auto;
+}
+
+.about-result #result-stats {
+    padding-left: 32px;
+}
+
+/* C. Ronaldo Title section; contents his name and origin */
+.Title-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 82%;
+    margin: 28px auto 12px;
+    padding-left: 32px;
+}
+
+.Title-section .name h1 {
+    font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.Title-section .origin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Title-section .origin span {
+    color: #5F6368;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Title-section .name svg {
+    max-width: 16px;
+    height: 16px;
+}
+
+.Title-section .about-btn {
+    margin-left: 32px;
+    display: flex;
+}
+
+.Title-section .about-btn button {
+    background-color: #E2EEFF;
+    border: none;
+    padding: 11px 19px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 14px 0 6px 8px;
+}
+
+.Title-section .about-btn button a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.Title-section .about-btn button:nth-child(1) {
+    border: 1px solid #1a73e8;
+}
+
+.Title-section .about-btn button:active {
+    border: 1px solid #1a73e8;
+}
+
+/* cristiano Ronaldo attributes section styling*********** */
+.attribute-section {
+    max-width: 100%;
+    background: linear-gradient(to top, #eef5ff 50%, transparent);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px 2px;
+}
+
+.attribute-section .gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.attribute-section .gtpic {
+    display: flex;
+    flex-direction: column;
+}
+
+.attribute-section .fpic img {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 1px;
+}
+
+.attribute-section .gtpic img:nth-child(1) {
+    border-top-right-radius: 15px;
+    margin-left: 1px;
+    margin-bottom: 1.6px;
+}
+
+.attribute-section .gtpic img:nth-child(2) {
+    border-bottom-right-radius: 15px;
+    margin-left: 1px;
+    margin-top: 1.6px;
+}
+
+.attribute-section .sky-sport {
+    max-width: 238.41px;
+    height: 100%;
+    margin-left: 12px;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 15px;
+    font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+}
+
+.attribute-section .sky-sport a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #70757a;
+}
+
+.attribute-section .sky-sport .text-wrapper {
+    padding: 14px;
+}
+
+.attribute-section .sky-sport .img-wrapper img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.attribute-section .sky-sport a p:nth-child(2) {
+    font-size: 14px;
+    color: #202124;
+    line-height: 20px;
+    margin-top: 18px;
+}
+
+.attribute-section .sky-sport a p:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #4d5156;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.attribute-section .sky-sport a p:nth-child(4) {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 26px;
+    font-family: arial, sans-serif;
+}
+
+.attribute-section .attribute {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 12px;
+}
+
+.attribute-section .attribute .age-csport {
+    display: flex;
+    flex-direction: row;
+}
+
+.attribute .age-csport .age-team {
+    background-color: #E2EEFF;
+    border-radius: 15px;
+    padding: 12px;
+    max-width: 113.19px;
+    height: 139.05px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.attribute .age-csport .current_team {
+    margin-right: 2px;
+}
+
+.attribute .age-csport .age {
+    margin-left: 2px;
+}
+
+.attribute .age-csport .age-team h1 {
+    font-weight: 500;
+    color: #040C28;
+    font-size: 14px;
+}
+
+.attribute .age-csport .age-team p {
+    font-weight: 400;
+    color: #2A4165;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.attribute .crist-instahandle {
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 238.39px;
+    height: 139.06px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Google Sans, arial, sans-serif;
+    padding: 12px;
+}
+
+.attribute .instahandle-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #70757a;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.attribute .crist-instahandle svg {
+    margin-left: auto;
+}
+
+.attribute .crist-instahandle .instaheadline p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.attribute .crist-instahandle .fofopo {
+    color: #4d5156;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* top stories of cristiano Ronaldo----------.......********** */
+.crist-top-stories-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: arial, sans-serif;
+    color: #202124;
+    font-size: 14px;
+    margin: 40px 4px 0;
+}
+
+.crist-top-stories-section .crist-top-stories {}
+
+.crist-top-stories-section .news-about-crist {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.crist-top-stories-section .news-about-crist h1 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.crist-top-stories-section .current-info-about-crist {
+    border-left: 1px solid #dadce0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: 44px;
+}
+
+.current-info-about-crist h1 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+}
